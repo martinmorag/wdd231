@@ -119,6 +119,8 @@ h2 {
 }
 .course-title {
     text-align: center;
+    background-color: transparent;
+    font-weight: normal;
 }
 .displayed {
     display: flex;
