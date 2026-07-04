@@ -1,0 +1,153 @@
+/************************ HEADER **********************************/
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 5px 0 5px 10px;
+  align-items: center;
+  border-bottom: 1px solid #deaaaa;
+  column-gap: 8px;
+  cursor: pointer;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.4rem;
+    color: #392727;
+}
+
+
+
+
+/************************ HAMBURGER **********************************/
+.hamburger {
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+    color: #392727;
+    height: 44px;
+}
+.hamburger::before {
+  content: "\2630";
+}
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation a {
+    color: #392727;
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #deaaaa;
+}
+.navigation li.current {
+    background-color: #eee;
+}
+.navigation a:hover {
+    background-color: #deaaaa;
+}
+
+
+
+
+
+/************************ MAIN **********************************/
+main, footer, nav, header {
+    max-width: 100vw;
+}
+.cont-about {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+}
+.cont-about div, .courses {
+    margin: 10px;
+    border: 1px solid #deaaaa;
+}
+.about-me p {
+    padding: 10px;
+    margin: 0 auto;
+}
+.me {
+    text-align: center;
+}
+.cont-about img {
+    width: 250px;
+    height: auto;
+}
+h2 {
+    background-color: #deaaaa;
+    text-align: center;
+    padding: 10px 0;
+}
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#all, #cse, #wdd {
+    width: 95%;
+    padding: 5px 0;
+    margin: 5px 0;
+    background-color: white;
+    border: 1px solid #392727;
+    border-radius: 5px;
+}
+.course-title {
+    text-align: center;
+}
+.displayed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.displayed div {
+    width: 95%;
+    border: 1px solid #392727;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+.displayed p {
+    margin: 10px 0;
+}
+
+
+/************************ FOOTER **********************************/
+footer {
+    background-color: #deaaaa;
+    padding: 1rem 10px;
+    text-align: center;
+}
+.links {
+    display: flex;
+    justify-content: center;
+}
+.links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #392727;
+}
+.links a:hover {
+    background-color: #ae8585;
+}

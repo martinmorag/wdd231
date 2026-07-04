@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin's website</title>
+    <meta name="author" content="Martin Marcelo Moraga Lopez">
+    <meta name="description" content="This is my website, feel free to explore it!">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="1" height="1">
+        <span>Martin's website</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">News & Events</a></li>
+            <li><a href="#">Dedicated Temples</a></li>
+            <li><a href="#">Announced Temples</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Martin's website</h1>
+        <section class="cont-about">
+            <div class="about-me">
+                <h2>About me</h2>
+                <p>Hello! I'm Martin Moraga, I'm from Argentina, I'm 25 years old and let me tell you a little bit about myself. I'm engaged and getting married in september, I'm very excited and really forward to it, although there is A LOT of work to do, it is very rewarding to do so. I like reading, playing video games and playing soccer, I play once a week with some friends. I love programming and I have had jobs with some clients, it's a great job to do! I want to keep learning and getting better. </p>
+            </div>
+            <div class="me">
+                <h2>Me</h2>
+                <img src="images/image.webp" alt="Photo of myself">
+            </div>
+        </section>
+        <section class="courses">
+            <h2>View Certificates Courses</h2>
+            <div class="categories">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="courses">
+                <p class="course-title">Total number of courses listed below: <span id="amount"></span></p>
+                <div class="displayed"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="links">
+            <a href="https://github.com/martinmorag" target="_blank"><img src="images/github.svg" alt="Github link" width="22" height="22"></a>
+            <a href="https://www.linkedin.com/in/martin-moraga-lopez-810077222/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn link" width="22" height="22"></a>
+            <a href="https://www.instagram.com/martin_morag" target="_blank"><img src="images/instagram.svg" alt="Instagram link" width="22" height="22"></a>
+        </div>
+        <p>&#169; 2026 - Martin Moraga - Virasoro, Argentina</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
