@@ -1,3 +1,7 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
 /************************ HEADER **********************************/
 header {
   display: grid;
@@ -69,6 +73,9 @@ header span {
 
 
 /************************ MAIN **********************************/
+h1 {
+    margin: 10px;
+}
 main, footer, nav, header {
     max-width: 100vw;
 }
