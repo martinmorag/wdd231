@@ -1,0 +1,113 @@
+/************************ HEADER **********************************/
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0;
+    border-bottom: 1px solid #deaaaa;
+    column-gap: 8px;
+    cursor: pointer;
+}
+header div {
+    display: flex;
+    border-bottom: 1px solid #deaaaa;
+}
+header span {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    display: block;
+    width: 30px;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.4rem;
+    color: #392727;
+}
+
+
+
+
+/************************ HAMBURGER **********************************/
+.hamburger {
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+    color: #392727;
+    height: 44px;
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    color: #392727;
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #deaaaa;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #deaaaa;
+}
+
+
+
+/************************ FOOTER **********************************/
+footer {
+    background-color: #deaaaa;
+    padding: 1rem 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #392727;
+}
+
+.links a:hover {
+    background-color: #ae8585;
+}

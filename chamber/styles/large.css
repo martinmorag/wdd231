@@ -1,0 +1,44 @@
+@media only screen and (min-width: 38rem) {
+    header,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header div {
+        display: flex;
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation li {
+        width: 33.33%;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 0;
+    }
+}
