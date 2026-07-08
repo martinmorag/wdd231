@@ -18,6 +18,8 @@ header div {
 header span {
     display: flex;
     align-items: center;
+    font-size: 1.4rem;
+        color: #392727;
 }
 
 header img {
@@ -27,10 +29,6 @@ header img {
     padding-top: 5px;
 }
 
-header span {
-    font-size: 1.4rem;
-    color: #392727;
-}
 
 
 
