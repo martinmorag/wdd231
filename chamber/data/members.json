@@ -1,0 +1,82 @@
+[
+    {
+        "companyName": "GreenLeaf Landscaping",
+        "address": "125 Oak Street, Springfield, IL 62701",
+        "phoneNumber": "(217) 555-0142",
+        "websiteUrl": "https://www.greenleaflandscaping.com",
+        "email": "greenleaflandscaping@gmail.com",
+        "imageFile": "greenleaf-landscaping.jpeg",
+        "level": 3,
+        "other": "Residential and commercial landscaping services. Established in 2012." 
+    },
+    {
+        "companyName": "BlueWave IT Solutions",
+        "address": "450 Innovation Drive, Austin, TX 78701",
+        "phoneNumber": "(512) 555-0198",
+        "websiteUrl": "https://www.bluewaveitsolutions.com",
+        "email": "bluewaveitsolutions@gmail.com",
+        "imageFile": "bluewave-it.jpeg",
+        "level": 2,
+        "other": "Managed IT services, cybersecurity, and cloud solutions for businesses." 
+    },
+    {
+        "companyName": "Sunrise Bakery & Café",
+        "address": "78 Maple Avenue, Portland, OR 97205",
+        "phoneNumber": "(503) 555-0117",
+        "websiteUrl": "https://www.sunrisebakerycafe.com",
+        "email": "sunrisebakerycafe@gmail.com",
+        "imageFile": "sunrise-bakery.jpeg",
+        "level": 1,
+        "other": "Fresh artisan bread, pastries, and specialty coffee. Open daily." 
+    },
+    {
+        "companyName": "Horizon Fitness Center",
+        "address": "920 Fitness Boulevard, Denver, CO 80202",
+        "phoneNumber": "(303) 555-0164",
+        "websiteUrl": "https://www.horizonfitnesscenter.com",
+        "email": "horizonfitnesscenter@gmail.com",
+        "imageFile": "horizon-fitness.jpeg",
+        "level": 2,
+        "other": "Full-service gym with personal training, yoga, and group fitness classes." 
+    },
+    {
+        "companyName": "BrightSmile Dental Clinic",
+        "address": "315 Elm Street, Columbus, OH 43215",
+        "phoneNumber": "(614) 555-0135",
+        "websiteUrl": "https://www.brightsmiledental.com",
+        "email": "brightsmiledental@gmail.com",
+        "imageFile": "brightsmile-dental.jpeg",
+        "level": 3,
+        "other": "Family dentistry offering preventive, cosmetic, and emergency dental care." 
+    },
+    {
+        "companyName": "RiverStone Real Estate",
+        "address": "640 Market Square, Nashville, TN 37203",
+        "phoneNumber": "(615) 555-0186",
+        "websiteUrl": "https://www.riverstonerealty.com",
+        "email": "riverstonerealty@gmail.com",
+        "imageFile": "riverstone-realstate.jpeg",
+        "level": 1,
+        "other": "Residential and commercial real estate sales and property management." 
+    },
+    {
+        "companyName": "EcoTech Solar Energy",
+        "address": "1500 Solar Park Road, Phoenix, AZ 85004",
+        "phoneNumber": "(602) 555-0171",
+        "websiteUrl": "https://www.echotechsolar.com",
+        "email": "echotechsolar@gmail.com",
+        "imageFile": "ecotech-solar.jpeg",
+        "level": 3,
+        "other": "Solar panel installation, maintenance, and renewable energy consulting." 
+    },
+    {
+        "companyName": "Silver Oak Accounting",
+        "address": "210 Business Center, Plaza, Charlotte, NC 28202",
+        "phoneNumber": "(704) 555-0159",
+        "websiteUrl": "https://www.silveroakaccounting.com",
+        "email": "silveroakaccounting@gmail.com",
+        "imageFile": "silveroak-accounting.jpeg",
+        "level": 2,
+        "other": "Accounting, bookkeeping, payroll, and tax preparation services for individuals and businesses." 
+    }
+]

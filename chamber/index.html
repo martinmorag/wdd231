@@ -6,16 +6,17 @@
     <title>Directory</title>
     <meta name="author" content="Martin Marcelo Moraga Lopez">
     <meta name="description"
-        content="This is the directory page of the Chamber of Commerce, feel free to explore our business and finding more about them on their respective websites.">
+        content="This is the home page of the Chamber of Commerce, feel free to explore the different pages along the website and discover more.">
     <meta property="og:title" content="Directory of Chamber of Commerce">
-    <meta property="og:description" content="This is the directory page of the Chamber of Commerce, feel free to explore our business and finding more about them on their respective websites.">
-    <meta property="og:image" content="https://es.wikipedia.org/wiki/Archivo:United_States_Chamber_of_Commerce_Building.jpg">
+    <meta property="og:description"
+        content="This is the home page of the Chamber of Commerce, feel free to explore the different pages along the website and discover more.">
+    <meta property="og:image"
+        content="https://es.wikipedia.org/wiki/Archivo:United_States_Chamber_of_Commerce_Building.jpg">
     <meta property="og:locale" content="https://martinmorag.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -39,12 +40,39 @@
         </nav>
     </header>
     <main>
-        <h1>Directory</h1>
-        <div class="buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <section id="cards">
+        <section class="hero">
+            <img src="images/hero.webp" alt="Hero image for the Chamber of Commerce">
+        </section>
+        <section class="but-wea">
+            <button class="join">Join our Chamber of Commerce</button>
+            <div class="weather">
+                <p>The current temperature in Virasoro is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <div id="forecast"></div>
+            </div>
+        </section>
+        <section class="events">
+            <h2>Current Events</h2>
+            <div class="current">
+                <div>
+                    <p>Business Growth & Innovation Summit</p>
+                    <p>A one-day conference where local entrepreneurs, business owners, and industry experts discuss strategies for growing
+                    businesses through innovation, technology, and networking.</p>
+                </div>
+                <div>
+                    <p>Local Business Networking Breakfast</p>
+                    <p>A monthly morning event designed to help local businesses build partnerships and exchange referrals in a relaxed
+                    environment.</p>
+                </div>
+                <div>
+                    <p>Community Business & Career Fair</p>
+                    <p>A public event connecting local companies with job seekers, students, and community members while showcasing products
+                    and services offered by regional businesses.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>

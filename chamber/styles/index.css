@@ -11,10 +11,12 @@ header {
     column-gap: 8px;
     cursor: pointer;
 }
+
 header div {
     display: flex;
     border-bottom: 1px solid #deaaaa;
 }
+
 header span {
     display: flex;
     align-items: center;
@@ -23,8 +25,8 @@ header span {
 header img {
     display: block;
     width: 30px;
-    height: 30px;
-    padding-top: 5px;
+    height: auto;
+    padding-bottom: 5px;
 }
 
 header span {
@@ -77,57 +79,72 @@ header span {
     border-bottom: 1px solid #deaaaa;
 }
 
-.navigation li.current {
-    background-color: #eee;
-}
-
 .navigation a:hover {
     background-color: #deaaaa;
 }
 
 /************************ MAIN **********************************/
-.buttons {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-.buttons button {
-    padding: 10px 25px;
-    background-color: transparent;
-    border: 1px solid #392727;
-    border-radius: 5px;
-    margin: 10px;
-}
-#cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-}
-#cards img {
-    width: 150px;
-    height: auto;
-    object-fit: contain;
-    margin-top: 10px;
-}
-.big-container {
-    background-color: #e6d4d4;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    max-width: 100vw;
-}
-.container {
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid #392727;
 }
-.info {
-    text-align: left;
-    word-break: break-all; 
+.hero {
+    margin: 1rem 0;
 }
-.info p {
-    margin: 20px 0;
+.hero img {
+    width: 90vw;
+}
+
+
+.but-wea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw;
+}
+.join {
+    padding: 10px 25px;
+    margin: 10px;
+    background-color: #392727;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.weather {
+    text-align: center;
+    padding: 30px;
+    background-color: #e6d4d4;
+}
+
+.events {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.current {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.current div {
+    padding: 10px;
+    margin: 10px;
+    background-color: #deaaaa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.current div p:first-child {
+    background-color: #392727;
+    color: white;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    padding: 10px;
 }
 
 
@@ -161,4 +178,73 @@ footer {
 
 .links a:hover {
     background-color: #ae8585;
+}
+
+
+
+
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header div {
+        display: flex;
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation li {
+        width: 33.33%;
+        text-align: center;
+    }
+
+
+
+    
+    .hero img {
+        width: 600px;
+    }
+    .but-wea {
+        flex-direction: row;
+        max-width: 100vw;
+    }
+
+
+    .current {
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+
+    footer {
+        flex-direction: row;
+        padding: 0;
+    }
 }
