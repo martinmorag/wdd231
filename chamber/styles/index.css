@@ -145,6 +145,29 @@ main {
     display: flex;
     text-align: center;
     padding: 10px;
+    word-break: break-all;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spotlights {
+    display: block;
+}
+.spotlights h2 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.spotlight {
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    border: 3px groove #392727;
 }
 
 
@@ -184,14 +207,6 @@ footer {
 
 
 @media only screen and (min-width: 38rem) {
-
-    header,
-    main,
-    footer {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -239,6 +254,10 @@ footer {
     .current {
         flex-direction: row;
         width: 100%;
+    }
+    .container {
+        flex-direction: row;
+        
     }
 
 
