@@ -20,6 +20,8 @@ header div {
 header span {
     display: flex;
     align-items: center;
+    font-size: 1.4rem;
+    color: #392727;
 }
 
 header img {
@@ -27,11 +29,6 @@ header img {
     width: 30px;
     height: auto;
     padding-bottom: 5px;
-}
-
-header span {
-    font-size: 1.4rem;
-    color: #392727;
 }
 
 
