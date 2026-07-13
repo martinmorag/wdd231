@@ -10,7 +10,7 @@ document.getElementById("lastModified").innerHTML = document.lastModified;
 
 
 const temp = document.querySelector('#current-temp')
-const image = document.querySelector('#weather-icon')
+const figure = document.querySelector('figure')
 const fig = document.querySelector('figcaption')
 const forecast = document.querySelector('#forecast')
 
@@ -23,10 +23,14 @@ async function apiFetch() {
             console.log(response.text())
         } else {
             const data = await response.json()
+
+            const img = document.createElement('img')
+            img.id = 'weather-icon'
             temp.innerHTML = `${data.main.temp} C°`;
-            image.setAttribute('alt', data.weather[0].main)
-            image.setAttribute('src', `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}.png`)
+            img.setAttribute('alt', data.weather[0].main)
+            img.setAttribute('src', `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}.png`)
             fig.innerHTML = data.weather[0].description;
+            figure.appendChild(img)
         }
     } catch (e) {
         console.log(e)
