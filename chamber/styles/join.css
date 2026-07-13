@@ -89,7 +89,7 @@ main  {
     flex-direction: column;
 }
 form {
-    margin: 1rem 2%;
+    margin: 1rem 2%;}
 
     label {
         display: block;
@@ -155,7 +155,7 @@ form {
     .textarea {
         padding-top: 20px;
     }
-}
+
 #cards {
     display: flex;
     flex-direction: column;
