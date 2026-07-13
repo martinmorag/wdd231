@@ -96,13 +96,15 @@ function displayCourses(param) {
   switch (param) {
     case 'all':
       courses.forEach(course => {
-        let card = document.createElement('div')
+        let card = document.createElement('button')
+        card.classList.add('course')
         let para = document.createElement('p')
         if (course.completed) {
           para.textContent = `✅ ${course.subject} ${course.number}`;
         } else {
           para.textContent = `${course.subject} ${course.number}`;
         }
+        card.addEventListener('click', () => displayCourseDetails(course))
         card.appendChild(para)
         displayed.appendChild(card)
       })
@@ -111,13 +113,15 @@ function displayCourses(param) {
     case 'cse':
       const cse = courses.filter(c => c.subject === 'CSE')
       cse.forEach(course => {
-        let card = document.createElement('div')
+        let card = document.createElement('button')
+        card.classList.add('course')
         let para = document.createElement('p')
         if (course.completed) {
           para.textContent = `✅ ${course.subject} ${course.number}`;
         } else {
           para.textContent = `${course.subject} ${course.number}`;
         }
+        card.addEventListener('click', () => displayCourseDetails(course))
         card.appendChild(para)
         displayed.appendChild(card)
       })
@@ -126,13 +130,15 @@ function displayCourses(param) {
     case 'wdd':
       const wdd = courses.filter(c => c.subject === 'WDD')
       wdd.forEach(course => {
-        let card = document.createElement('div')
+        let card = document.createElement('button')
+        card.classList.add('course')
         let para = document.createElement('p')
         if (course.completed) {
           para.textContent = `✅ ${course.subject} ${course.number}`;
         } else {
           para.textContent = `${course.subject} ${course.number}`;
         }
+        card.addEventListener('click', () => displayCourseDetails(course))
         card.appendChild(para)
         displayed.appendChild(card)
       })
@@ -159,3 +165,29 @@ wddBtn.addEventListener('click', function() {
   displayed.innerHTML = '';
   displayCourses('wdd')
 })
+
+
+
+
+
+const courseDetails = document.querySelector('#courseDetails')
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  courseDetails.showModal();
+
+  const closeModal = document.querySelector('#closeModal');
+
+  closeModal.addEventListener("click", () => {
+    courseDetails.close();
+  });
+}

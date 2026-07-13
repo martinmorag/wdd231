@@ -1,0 +1,26 @@
+[
+    {
+        "id": "gold",
+        "name": "Gold",
+        "level": 3,
+        "description": "Premium membership for organizations seeking maximum visibility, exclusive networking opportunities, priority event access, and enhanced business promotion."
+    },
+    {
+        "id": "silver",
+        "name": "Silver",
+        "level": 2,
+        "description": "Ideal for growing businesses looking to expand their network, participate in chamber events, and access valuable member resources and marketing opportunities."
+    },
+    {
+        "id": "bronze",
+        "name": "Bronze",
+        "level": 1,
+        "description": "A great entry-level option for businesses wanting to connect with the local business community, attend chamber events, and enjoy core member benefits."
+    },
+    {
+        "id": "np",
+        "name": "NP (Non-profit)",
+        "level": 0,
+        "description": "Complimentary membership for registered non-profit organizations, providing access to networking opportunities, community partnerships, and chamber resources at no cost."
+    }
+]
