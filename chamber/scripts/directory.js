@@ -64,8 +64,14 @@ fetchJSON()
 gridBtn.addEventListener('click', function () {
     if (screen.width > 608) {
         cards.style.gridTemplateColumns = '1fr 1fr 1fr';
+        document.querySelectorAll('#cards img').forEach(img => {
+            img.style.display = 'block'
+        });
     }
 })
 listBtn.addEventListener('click', function () {
     cards.style.gridTemplateColumns = '1fr';
+    document.querySelectorAll('#cards img').forEach(img => {
+        img.style.display = 'none'
+    });
 })
