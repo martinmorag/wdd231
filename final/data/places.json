@@ -1,0 +1,168 @@
+[
+    {
+        "name": "Mount Rainier Skyline Trail",
+        "city": "Ashford",
+        "difficulty": "Hard",
+        "distance": "9.5",
+        "elevation": "520",
+        "estimated": "4-5 hrs",
+        "trailType": "Loop",
+        "rating": "4.9",
+        "season": "Summer"
+    },
+    {
+        "name": "Bear Mountain Loop",
+        "city": "New York",
+        "difficulty": "Moderate",
+        "distance": "7.2",
+        "elevation": "380",
+        "estimated": "3 hrs",
+        "trailType": "Loop",
+        "rating": "4.6",
+        "season": "Spring"
+    },
+    {
+        "name": "Griffith Park Observatory Trail",
+        "city": "Los Angeles",
+        "difficulty": "Easy",
+        "distance": "5",
+        "elevation": "220",
+        "estimated": "2 hrs",
+        "trailType": "Out & Back",
+        "rating": "4.5",
+        "season": "All Year"
+    },
+    {
+        "name": "Runyon Canyon Trail",
+        "city": "Los Angeles",
+        "difficulty": "Moderate",
+        "distance": "4.8",
+        "elevation": "260",
+        "estimated": "2 hrs",
+        "trailType": "Loop",
+        "rating": "4.4",
+        "season": "All Year"
+    },
+    {
+        "name": "Torres del Paine Base Trek",
+        "city": "Puerto Natales",
+        "difficulty": "Hard",
+        "distance": "22",
+        "elevation": "900",
+        "estimated": "8-10 hrs",
+        "trailType": "Out & Back",
+        "rating": "5",
+        "season": "Summer"
+    },
+    {
+        "name": "Cerro Campanario Trail",
+        "city": "Bariloche",
+        "difficulty": "Moderate",
+        "distance": "2.5",
+        "elevation": "280",
+        "estimated": "1.5 hrs",
+        "trailType": "Out & Back",
+        "rating": "4.8",
+        "season": "Spring"
+    },
+    {
+        "name": "Refugio Frey Trail",
+        "city": "Bariloche",
+        "difficulty": "Hard",
+        "distance": "20.5",
+        "elevation": "700",
+        "estimated": "7 hrs",
+        "trailType": "Out & Back",
+        "rating": "4.9",
+        "season": "Summer"
+    },
+    {
+        "name": "Cerro de la Cruz Trail",
+        "city": "Villa Carlos Paz",
+        "difficulty": "Easy",
+        "distance": "3.6",
+        "elevation": "180",
+        "estimated": "1.5 hrs",
+        "trailType": "Out & Back",
+        "rating": "4.4",
+        "season": "Autumn"
+    },
+    {
+        "name": "Fitz Roy Laguna de los Tres",
+        "city": "El Chaltén",
+        "difficulty": "Hard",
+        "distance": "21.4",
+        "elevation": "1030",
+        "estimated": "8 hrs",
+        "trailType": "Out & Back",
+        "rating": "5",
+        "season": "Summer"
+    },
+    {
+        "name": "Seven Hanging Valleys Trail",
+        "city": "Lagoa",
+        "difficulty": "Moderate",
+        "distance": "11.5",
+        "elevation": "310",
+        "estimated": "4 hrs",
+        "trailType": "Point to Point",
+        "rating": "4.9",
+        "season": "Spring"
+    },
+    {
+        "name": "Snowdon Pyg Track",
+        "city": "Llanberis",
+        "difficulty": "Hard",
+        "distance": "11",
+        "elevation": "720",
+        "estimated": "6 hrs",
+        "trailType": "Out & Back",
+        "rating": "4.8",
+        "season": "Summer"
+    },
+    {
+        "name": "Tongariro Alpine Crossing",
+        "city": "Taupō",
+        "difficulty": "Hard",
+        "distance": "19.4",
+        "elevation": "760",
+        "estimated": "7 hrs",
+        "trailType": "Point to Point",
+        "rating": "5.0",
+        "season": "Summer"
+    },
+    {
+        "name": "Blue Mountains Grand Canyon Walk",
+        "city": "Blackheath",
+        "difficulty": "Moderate",
+        "distance": "6.3",
+        "elevation": "320",
+        "estimated": "3 hrs",
+        "trailType": "Loop",
+        "rating": "4.7",
+        "season": "Spring"
+    },
+    {
+        "name": "Table Mountain Platteklip Gorge",
+        "city": "Cape Town",
+        "difficulty": "Hard",
+        "distance": "6.5",
+        "elevation": "740",
+        "estimated": "3-4 hrs",
+        "trailType": "Out & Back",
+        "rating": "4.8",
+        "season": "Autumn"
+    },
+    {
+        "name": "Dragon's Back Trail",
+        "city": "Hong Kong",
+        "difficulty": "Moderate",
+        "distance": "8.5",
+        "elevation": "290",
+        "estimated": "3 hrs",
+        "trailType": "Point to Point",
+        "rating": "4.7",
+        "season": "Autumn"
+    }
+
+]
