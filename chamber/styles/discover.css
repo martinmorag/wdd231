@@ -1,0 +1,261 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/************************ HEADER **********************************/
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0;
+    border-bottom: 1px solid #deaaaa;
+    column-gap: 8px;
+    cursor: pointer;
+}
+
+header div {
+    display: flex;
+    border-bottom: 1px solid #deaaaa;
+}
+
+header span {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #392727;
+}
+
+header img {
+    display: block;
+    width: 30px;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.current {
+    background-color: #e8cfcf;
+}
+
+
+/************************ HAMBURGER **********************************/
+.hamburger {
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+    color: #392727;
+    height: 44px;
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    color: #392727;
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #deaaaa;
+}
+
+.navigation a:hover {
+    background-color: #deaaaa;
+}
+
+
+/************************ MAIN **********************************/
+#visit {
+    text-align: center;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    background-color: #e9c1c1;
+}
+h1 {
+    text-align: center;
+}
+#places {
+    display: grid;
+    grid-template-areas:
+            'a'
+            'b'
+            'c'
+            'd'
+            'e'
+            'f'
+            'g'
+            'h';
+    grid-gap: 10px;
+    padding: 10px;
+}
+#places h2 {
+    text-align: center;
+}
+#places div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #392727;
+    border-radius: 5px;
+    padding: 10px
+}
+#places button {
+    background-color: #deaaaa;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+
+/************************ MODAL **********************************/
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
+
+
+
+/************************ FOOTER **********************************/
+footer {
+    background-color: #deaaaa;
+    padding: 1rem 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.info-chamber {
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #392727;
+}
+
+.links a:hover {
+    background-color: #ae8585;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 680px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header div {
+        display: flex;
+        border-bottom: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation li {
+        width: 33.33%;
+        text-align: center;
+    }
+
+
+
+    
+    #places {
+        grid-template-areas:
+            'a b'
+            'c d'
+            'e f'
+            'g h';
+    }
+    #places div:hover {
+        transform: translateY(-5px);
+        transition: all .1s ease-in-out;
+    }
+
+
+
+
+    footer {
+        flex-direction: row;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1015px) {
+    #places {
+        grid-template-areas:
+            'a b c'
+            'd e f'
+            'g h .';
+    }
+}
