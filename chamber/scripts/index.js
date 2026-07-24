@@ -78,7 +78,7 @@ async function fetchJSON() {
             const filtered = data.filter(d => d.level === 2 || d.level === 3)
             const shuffle = filtered.sort(() => 0.5 - Math.random())
             const selected = shuffle.slice(0, 3)
-            
+
             selected.forEach((sel) => {
                 const div = document.createElement('div')
                 const inner = document.createElement('div')
@@ -104,3 +104,20 @@ async function fetchJSON() {
 fetchJSON()
 forecastFetch()
 apiFetch()
+
+
+
+
+
+const getString = window.location.pathname;
+const navItems = document.querySelectorAll('#nav-bar li')
+
+if (getString === '/chamber/') {
+    navItems[0].classList.add('current')
+} else if (getString === '/chamber/directory.html') {
+    navItems[1].classList.add('current')
+} else if (getString === '/chamber/discover.html') {
+    navItems[2].classList.add('current')
+} else if (getString === '/chamber/join.html') {
+    navItems[3].classList.add('current')
+}
