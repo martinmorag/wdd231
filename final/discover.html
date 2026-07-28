@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Next Hike</title>
+    <title>Discover - Your Next Hike</title>
     <meta name="author" content="Martin Marcelo Moraga Lopez">
     <meta name="description"
-        content="Welcome to Your Next Hike, if you want to know the best spots to visit the most famous and enjoyable trails, you are in the right place!">
+        content="Welcome to Your Next Hike, here you can see all of the different spots where you can research and decide where your next hike will be.">
     <meta property="og:description"
-        content="Welcome to Your Next Hike, if you want to know the best spots to visit the most famous and enjoyable trails, you are in the right place!">
+        content="Welcome to Your Next Hike, here you can see all of the different spots where you can research and decide where your next hike will be.">
     <meta property="og:image" content="https://martinmorag.github.io/wdd231/final/images/hero.webp">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://martinmorag.github.io/wdd231/final/index.html">
+    <meta property="og:url" content="https://martinmorag.github.io/wdd231/final/discover.html">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/discover.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -35,27 +35,23 @@
                 <li><a href="/wdd231/final/comments.html">Comments</a></li>
             </ul>
         </nav>
+        <dialog id="placeDetails"></dialog>
     </header>
     <main>
-        <section class="hero">
-            <h1>Welcome to Your Next Hike</h1>
-            <img src="images/hero.webp" alt="Hero Image">
-        </section>
-        <section class="bottom">
-            <div class="comments">
-                <h2>Would like to tell us about your experience?</h2>
-                <a href="comments.html">Go to Comments</a>
-            </div>
-            <div class="filter">
-                <form method="GET" action="discover.html">
-                    <h2>What is the difficulty you are looking for?</h2>
-                    <label><input type="radio" name="difficulty" value="Hard" required> Hard</label>
-                    <label><input type="radio" name="difficulty" value="Moderate"> Moderate</label>
-                    <label><input type="radio" name="difficulty" value="Easy"> Easy</label>
-                    <input type="submit" value="Choose difficulty">
-                </form>
-            </div>
-        </section>
+        <h1>The best trails around the world <img src="images/hiking.svg" alt="Hiking icon"></h1>
+        <form class="filter" id="form">
+            <select name="difficulty">
+                <option value="">Please select an option</option>
+            </select>
+            <select name="city">
+                <option value="">Please select an option</option>
+            </select>
+            <select name="season">
+                <option value="">Please select an option</option>
+            </select>
+            <input type="submit" value="Filter">
+        </form>
+        <section class="cards"></section>
     </main>
     <footer>
             <p>WDD231 Class Project</p>

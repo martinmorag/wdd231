@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Next Hike</title>
+    <title>Comments - Your Next Hike</title>
     <meta name="author" content="Martin Marcelo Moraga Lopez">
     <meta name="description"
-        content="Welcome to Your Next Hike, if you want to know the best spots to visit the most famous and enjoyable trails, you are in the right place!">
+        content="Welcome to Your Next Hike, feel welcome to tell us about where you have been and how was it.">
     <meta property="og:description"
-        content="Welcome to Your Next Hike, if you want to know the best spots to visit the most famous and enjoyable trails, you are in the right place!">
+        content="Welcome to Your Next Hike, feel welcome to tell us about where you have been and how was it.">
     <meta property="og:image" content="https://martinmorag.github.io/wdd231/final/images/hero.webp">
     <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://martinmorag.github.io/wdd231/final/index.html">
+    <meta property="og:url" content="https://martinmorag.github.io/wdd231/final/discover.html">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/comments.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/comments.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -35,26 +35,21 @@
                 <li><a href="/wdd231/final/comments.html">Comments</a></li>
             </ul>
         </nav>
+        <dialog id="placeDetails"></dialog>
     </header>
     <main>
-        <section class="hero">
-            <h1>Welcome to Your Next Hike</h1>
-            <img src="images/hero.webp" alt="Hero Image">
-        </section>
-        <section class="bottom">
-            <div class="comments">
-                <h2>Would like to tell us about your experience?</h2>
-                <a href="comments.html">Go to Comments</a>
-            </div>
-            <div class="filter">
-                <form method="GET" action="discover.html">
-                    <h2>What is the difficulty you are looking for?</h2>
-                    <label><input type="radio" name="difficulty" value="Hard" required> Hard</label>
-                    <label><input type="radio" name="difficulty" value="Moderate"> Moderate</label>
-                    <label><input type="radio" name="difficulty" value="Easy"> Easy</label>
-                    <input type="submit" value="Choose difficulty">
-                </form>
-            </div>
+        <h1>Comment section</h1>
+        <p class="subtitle">Tell us about your experiences while hiking!</p>
+        <section class="post">
+            <form method="post">
+                <label>Where did you go?</label>
+                <input type="text" name="place" required>
+                <label>Date</label>
+                <input type="date" name="date" required>
+                <label>Tell us your experience</label>
+                <textarea name="comment" rows="5" required></textarea>
+                <input type="submit" value="Share your experience">
+            </form>
         </section>
     </main>
     <footer>
