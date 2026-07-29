@@ -35,13 +35,15 @@
                 <li><a href="/wdd231/final/comments.html">Comments</a></li>
             </ul>
         </nav>
-        <dialog id="placeDetails"></dialog>
+        
     </header>
     <main>
         <h1>Comment section</h1>
         <p class="subtitle">Tell us about your experiences while hiking!</p>
         <section class="post">
             <form method="post">
+                <label>Your name</label>
+                <input type="text" name="name" required>
                 <label>Where did you go?</label>
                 <input type="text" name="place" required>
                 <label>Date</label>
@@ -51,6 +53,11 @@
                 <input type="submit" value="Share your experience">
             </form>
         </section>
+        <section class="comments-container">
+            <h2>Comments</h2>
+            <div class="comments"></div>
+        </section>
+        <dialog id="placeDetails"></dialog>
     </main>
     <footer>
             <p>WDD231 Class Project</p>

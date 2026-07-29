@@ -56,3 +56,7 @@ function displayMembershipDetails(membership) {
 const getString = window.location.search;
 
 const myInfo = new URLSearchParams(getString)
+
+
+
+document.getElementById('timestamp').value = new Date().toLocaleDateString("en-US");

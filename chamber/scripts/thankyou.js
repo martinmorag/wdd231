@@ -30,6 +30,7 @@ if (myInfo.get('org-description') != '') orgDescription = true;
 
 document.querySelector('#results').innerHTML = `
 <p>Thank you for joining ${myInfo.get('first')} ${myInfo.get('last')}!</p>
+<p>Date: ${myInfo.get('timestamp')}</p>
 ${orgTitle ? `<p>Your organizational title: ${myInfo.get('org-title')}</p>` : ''}
 <p>Your email is: ${myInfo.get('email')}</p>
 <p>Your phone number is: ${myInfo.get('phone')}</p>

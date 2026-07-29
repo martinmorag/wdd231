@@ -90,7 +90,7 @@ h1, .subtitle {
 form {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 85%;
     border: 2px solid #6AB547;
     padding: 10px;
     margin: 0 auto;
@@ -105,6 +105,26 @@ input[type=submit] {
     padding: 10px 20px;
     margin: 20px;
     color: white;
+}
+
+.comments-container {
+    display: block;
+}
+h2 {
+    margin-top: 50px;
+    text-align: center;
+}
+.comments {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: space-around;
+}
+.comments div {
+    border: 2px solid #6AB547;
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
 }
 
 
@@ -156,7 +176,11 @@ footer {
         text-align: center;
     }
 
-
-
+    form {
+        width: 40%;
+    }
+    .comments div {
+        width: 30%;
+    }
 
 }

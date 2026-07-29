@@ -167,8 +167,9 @@ form {
     text-align: center;
     width: 100%;
     padding: 5px 0 15px;
-    margin: 10px 0;
+    margin: 20px 0;
     color: black;
+    animation: pulse 5s infinite;
 }
 #cards button {
     border: 1px solid #deaaaa;
@@ -181,13 +182,30 @@ form {
 input:-webkit-autofill {
     -webkit-text-fill-color: #3D405B;
 }
+@keyframes pulse {
+    0% {
+        /* transform: scale(0.95); */
+        box-shadow: 0 0 0 0 rgba(222, 84, 72, 0.7);
+    }
 
+    70% {
+        /* transform: scale(1); */
+        box-shadow: 0 0 0 15px rgba(222, 84, 72, 0);
+    }
+
+    100% {
+        /* transform: scale(0.95); */
+        box-shadow: 0 0 0 0 rgba(222, 84, 72, 0);
+    }
+}
 
 
 
 #results {
     margin: 10px;
 }
+
+
 
 
 /************************ MODAL **********************************/
@@ -250,14 +268,6 @@ footer {
 
 
 @media only screen and (min-width: 38rem) {
-
-    header,
-    main,
-    footer {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
     header {
         flex-direction: row;
         justify-content: space-between;
