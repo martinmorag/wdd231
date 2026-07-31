@@ -68,7 +68,7 @@ header img {
 }
 
 .navigation a {
-    color: #6AB547;
+    color: #256507;
     display: block;
     padding: .8rem 10px;
     text-decoration: none;
@@ -137,7 +137,7 @@ select {
 }
 .cards button {
     background-color: #6AB547;
-    color: white;
+    color: black;
     padding: 10px 15px;
     border: none;
     margin: 0 auto;
@@ -180,6 +180,9 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+}
+footer a {
+    color: black;
 }
 
 
